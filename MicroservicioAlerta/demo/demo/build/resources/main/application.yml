@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: localhost
+    listener:
+      simple:
+        retry:
+          max-attempts: 3
+          enabled: true
